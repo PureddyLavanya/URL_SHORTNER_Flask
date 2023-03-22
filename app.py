@@ -31,19 +31,5 @@ def url_short():
     else:
         return redirect(url_for('index'))
 
-"""@app.route('/<string:code>')
-def redirect_to_shorturl(code):
-    if os.path.exists("urls.json"):
-        with open("urls.json") as urls_file:
-            urls=json.load(urls_file)
-            if code in urls.keys():
-                if 'url' in urls[code].keys():
-                    return redirect(urls[code]['url'])
-    else:
-        return abort(404)"""
-                
-
-
-
 if __name__=="__main__":
     app.run(debug=True)
