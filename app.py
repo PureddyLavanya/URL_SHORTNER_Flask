@@ -4,7 +4,7 @@ import os.path
 
 
 app=Flask(__name__)
-app.secret_key="LavanyaPflsk77"
+app.secret_key="Lavanya@p"
 
 @app.route('/')
 @app.route('/index')
