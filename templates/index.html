@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    {% for message in get_flashed_messages() %}
+     {{message}}
+    {% endfor %}
+    <form action="/url_short" method="post" enctype="multipart/form-data">
+        Url:<input type="url" placeholder="Enter url here.." name="url">
+        Short Name:<input type="text" placeholder="Enter short code here.." name="code">
+        <input type="submit" value="Short">
+    </form>
+</body>
+</html>
