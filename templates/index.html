@@ -6,15 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
     <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+        background-color:ivory;
+      }
+      div{
+        margin: 10% 25% 10% 25%;
+        padding:20px;
+        text-align: center;
+        font-size:27px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius:30px;
+        border:6px solid brown;
+        width: 600px;
+        height: 300px;
+            color:darkslategrey;
+      }
+      p{
+        font-size:26px;
+        margin-top:40px;
+        color:mediumblue;
+      }
+    </style>
 </head>
 <body>
     {% for message in get_flashed_messages() %}
-     {{message}}
+    <p class="text-center "> {{message}} </p>
     {% endfor %}
+    <div class="form">
     <form action="/url_short" method="post" enctype="multipart/form-data">
-        Url:<input type="url" placeholder="Enter url here.." name="url">
-        Short Name:<input type="text" placeholder="Enter short code here.." name="code">
-        <input type="submit" value="Short">
+        Url:<input type="url" placeholder="Enter url here.." name="url"><br><br>
+        Short Name:<input type="text" placeholder="Enter short code here.." name="code"><br><br>
+        <input class="btn-primary btn-lg" type="submit" value="Short">
     </form>
+</div>
 </body>
 </html>

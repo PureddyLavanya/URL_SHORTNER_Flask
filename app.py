@@ -27,7 +27,7 @@ def url_short():
         urls[sh_code]={'url':request.form["url"]}
         with open('urls.json','w') as url_file:
             json.dump(urls,url_file)
-        return render_template("short_url.html",code=sh_code,sh_url=request.form["url"])
+        return render_template("short_url.html",srt_code=sh_code,srt_url=request.form["url"])
     else:
         return redirect(url_for('index'))
 
