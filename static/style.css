@@ -1,3 +1,23 @@
 body{
-   background-color: aliceblue; 
-}
+   background-image:url('/static/images/bg8.jpg');
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-attachment: fixed;
+ }
+ div{
+   margin: 10% 25% 10% 25%;
+   padding:20px;
+   text-align: center;
+   font-size:27px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   border-radius:30px;
+   border:6px solid brown;
+   width:50%;
+   height: 300px;
+       color:darkslategrey;
+ }
+ p{
+   font-size:26px;
+   margin-top:40px;
+   color:mediumblue;
+ }

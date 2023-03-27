@@ -7,32 +7,10 @@
     <title>Index Page</title>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        body{
-        background-color:ivory;
-      }
-      div{
-        margin: 10% 25% 10% 25%;
-        padding:20px;
-        text-align: center;
-        font-size:27px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        border-radius:30px;
-        border:6px solid brown;
-        width: 600px;
-        height: 300px;
-            color:darkslategrey;
-      }
-      p{
-        font-size:26px;
-        margin-top:40px;
-        color:mediumblue;
-      }
-    </style>
 </head>
 <body>
     {% for message in get_flashed_messages() %}
-    <p class="text-center "> {{message}} </p>
+    <p class="text-center text-danger"> {{message}} </p>
     {% endfor %}
     <div class="form">
     <form action="/url_short" method="post" enctype="multipart/form-data">
