@@ -3,6 +3,7 @@ body{
    background-repeat: no-repeat;
    background-size:cover;
    background-attachment: fixed;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
  div{
    margin: 10% 25% 10% 25%;
@@ -17,7 +18,6 @@ body{
        color:darkslategrey;
  }
  p{
-   font-size:26px;
-   margin-top:40px;
-   color:mediumblue;
+  font-size:25px;
+  font-weight:400;
  }
